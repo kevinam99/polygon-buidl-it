@@ -13,10 +13,10 @@ contract("FileStore", accounts => {
     it("stores the files with the correct cid", async() =>{
         try {
           const _cid = "some test cid"
-          const addFile = await contractInstance.addFile.call(_cid)
+          const addFile = await contractInstance.addFile(_cid).call()
           assert.equal(addFile, _cid, "has the correct cid")
-          const getFile = await contractInstance.getFile.call(_cid)
-          assert.equal(getFile, _cid, "has the correct cid")
+          const getFile = await contractInstance.getFiles().call({from: accounts[0]})
+          assert.equal(getFile, [_cid], "has the correct cid")
         }
         catch(error) {
             console.error(error)
