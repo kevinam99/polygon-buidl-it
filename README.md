@@ -28,7 +28,7 @@ This can be used as a backend service (like AWS S3) where the CIDs are stored in
 3. `truffle migrate --network development` (Make sure Ganache is running)
 4. `truffle test`
 
-Watch the implementation at [https://youtu.be/iXuX9THJH_0](https://youtu.be/iXuX9THJH_0)
+Watch the implementation at [https://youtu.be/iQn0Au1XEp8](https://youtu.be/iQn0Au1XEp8)
 
 Test it out at [https://kevinam99.github.io/buidl-it-frontend/](https://kevinam99.github.io/buidl-it-frontend/)
 
